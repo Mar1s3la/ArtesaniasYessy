@@ -1,0 +1,17 @@
+<div class="container">
+<h1>Ver Categoria</h1>
+  <div class="well">
+<p>
+  <strong>Nombre:</strong>
+  <%= @category.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @category.descripcion %>
+</p>
+
+<%= link_to 'Regresar', categories_path, class: 'btn btn-primary btn-sm'   %>
+| <%= link_to 'Editar', edit_category_path(@category), class: 'btn btn-warning btn-sm'   %>
+  </div>
+</div>

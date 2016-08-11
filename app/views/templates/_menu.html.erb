@@ -1,0 +1,19 @@
+<header><a id="logo" href="#">Logo</a>
+  <nav id="menu"><a class="nav-mobile" id="nav-mobile" href="#"></a>
+    <ul>
+      <% if current_empleado.nil? %>
+          <li><a href="<%= root_path %>"><i class="icon icon-home2"></i> Inicio <span class="sr-only">(current)</span></a></li>
+          <li><a href="<%= new_empleado_session_path %>"><i class="icon icon-enter"></i> Ingreso</a></li>
+          <li><a href="<%= new_empleado_registration_path %>"><i class="icon icon-user-plus"></i> Registro</a></li>
+      <% else %>
+          <li><a href="<%= root_path %>"><i class="icon icon-home2"></i> Inicio <span class="sr-only">(current)</span></a></li>
+          <li><a href="<%= productos_path %>"><i class="icon icon-paypal"></i> Productos</a></li>
+          <li><a href="<%=categories_path %>"><i class="icon icon-list"></i> Categorías</a></li>
+          <li><a href="<%=tamanos_path %>"><i class="icon icon-spinner6"></i> Tamaños</a></li>
+          <li><a href="<%=disenos_path %>"><i class="icon icon-star-half"></i> Diseños</a></li>
+                    <!--<li><a href="<%= edit_empleado_registration_path %>"><i class="icon icon-pencil2"></i> Editar Mis Datos</a></li>-->
+          <li><a href="<%= destroy_empleado_session_path %>" data-method="delete"><i class="icon icon-exit"></i> Salir</a></li>
+      <%end %>
+    </ul>
+  </nav>
+</header>

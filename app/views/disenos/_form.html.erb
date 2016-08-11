@@ -1,0 +1,9 @@
+<h1><%= name %> Diseño  <%= @diseno.nombre %></h1>
+<div class="well">
+  <%= simple_form_for @diseno do |f| %>
+      <%= f.input :nombre,  placeholder: "'Escriba el nombre del diseño (Ej. Flores)" %>
+      <%= f.input :diseno %>
+      <%= f.button :submit,  "Guardar Cambios", class: "btn btn-success"  %> |
+      <%= link_to "Cancelar", :back, {:class=>"btn btn-primary"} %>
+  <% end -%>
+  </div>

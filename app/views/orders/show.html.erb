@@ -1,0 +1,50 @@
+<div class="container">
+<div class="well">
+  <h1>Orden #<%=@order.id%> </h1>
+  <p>
+    Generar:
+  <%= link_to "Pdf", order_path(@order.id, format: "pdf"), class: 'btn btn-info'  %>
+  <%= link_to "Excel", order_path(@order.id, format: "xls"), class: 'btn btn-success'  %>
+  </p>
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+    <td>Cliente</td>
+    <td><%=@order.user.name%><%=@order.user.lastname%></td>
+    <td>Fecha de la Orden</td>
+    <td><%=@order.updated_at%></td>
+    <td>Direccion:</br><%=@order.direccion%></br>C.P:<%= @order.cp%> </br> Ciudad:<%=@order.ciudad%> </br> Estado:<%= @order.estado %></br>Pais:<%= @order.pais %></br></td>
+  </tr>
+  <tr>
+    <td>Producto</td>
+    <td>Tamaño</td>
+    <td>Diseño</td>
+    <td>Cantidad</td>
+    <td>Precio</td>
+    <td>Subtotal</td>
+  </tr>
+  </thead>
+  <tbody>
+  <% @order.order_items.each do |i| %>
+      <tr>
+        <td><%= i.producto.producto %></td>
+        <td><%= i.producto.tamano.tamano %></td>
+        <td><%= i.diseno.nombre %></td>
+        <td><%= i.quantity %>Piez.</td>
+        <td> <%=number_to_currency i.producto.precio %></td>
+        <td> <%=number_to_currency i.total_price %></td>
+      </tr>
+  <% end %>
+  </tbody>
+  <tfoot>
+  <td>Total:</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td> <%=number_to_currency @order.subtotal %></td>
+  </tfoot>
+</table>
+  <%= link_to "Volver",  :back, class: 'btn btn-warning' %>
+</div>
+</div>

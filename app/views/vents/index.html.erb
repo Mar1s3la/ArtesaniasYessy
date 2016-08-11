@@ -1,0 +1,39 @@
+<div class="container">
+  <h1>Ventas</h1>
+  <div class="well">
+
+   <div class="input-group">
+      <span class="input-group-addon icon icon-search"></span>
+      <input type="search" class="form-control" placeholder="Buscar" id="searchTerm" onkeyup="doSearch()">
+    </div>
+    <% if !@vents.blank? %>
+   <table id="dataTable" class="table table-striped table-bordered">  <thead>
+  <tr>
+    <td colspan="3">Nombre del Empleado</td>
+    <td>Fecha de la venta</td>
+    <td>Total de la Venta</td>
+  </tr>
+  </thead>
+  <% @vents.each do |v| %>
+<tbody>
+  <tr>
+    <td colspan="3"><%=v.empleado.first_name %><%=v.empleado.last_name %></td>
+    <td><%=v.updated_at.strftime("%d-%m-%Y a las %H:%M:%S") %> </td>
+    <td><%=number_to_currency v.total %> </td>
+    <td><%= link_to 'Ver', vent_path(v), class: 'btn btn-info btn-sm' %></td>
+  </tr>
+  </tbody>
+  <% end  %>
+
+</table>
+        </br>
+    <% else %>
+        <br/>
+        <h3>No hay registros</h3>
+        <br/>
+    <% end %>
+  </div>
+</div>
+
+
+

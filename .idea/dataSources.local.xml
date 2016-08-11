@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - artesanias@localhost" uuid="1aff9375-347b-4744-8b18-8c00e07dae3c">
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-scope>artesanias:pg_catalog,postgres,public</introspection-scope>
+      <resolve-scope>artesanias:postgres,public</resolve-scope>
+    </data-source>
+  </component>
+</project>

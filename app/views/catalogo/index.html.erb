@@ -1,0 +1,23 @@
+<% if notice %>
+    <p id="notice"><%= notice %></p>
+<% end %>
+<div class="col-xs-6 text-right">
+  <h1 class="cart-text"><%= render 'catalogo/cart_text' %></h1>
+</div>
+<div class="container">
+  <div class="input-group">
+    <span class="input-group-addon icon icon-search"></span>
+    <input type="search" class="form-control" placeholder="Buscador" id="searchTerm" onkeyup="doSearch()">
+  </div>
+  </br>
+  <%= current_vent.id %>
+  <div class="col-xs-6 col-xs-offset-3">
+    <h2 class="text-center">Catalogo de Productos</h2>
+
+    </br>
+    <% @productos.each do |product| %>
+        <%= render "product_row", producto: product, vent_item: @vent_item %>
+    <% end %>
+  </div>
+
+</div>

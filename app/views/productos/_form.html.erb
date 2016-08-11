@@ -1,0 +1,23 @@
+<div class="well">
+    <%= simple_form_for @producto, html: {multipart: true} do |f| %>
+      <%= f.input :producto,  placeholder: "Escriba el nombre del producto (Ej. Rana)" %>
+      <%= f.input :fotografia,  :multiple => true%>
+      <%= f.input :descripcion,  placeholder: "Escriba la descripcion del producto (Ej. Hermosa rana decorativa)"  %>
+      <%= f.input :tamano_id, collection: Tamano.all  ,label_method: :tamano, prompt: "Choose" %>
+      <%= f.input :largo,  placeholder: "Escriba el largo del producto (Ej. 10)"  %>
+      <%= f.input :alto,  placeholder: "Escriba el alto del producto (Ej. 15)" %>
+      <%= f.input :ancho,  placeholder: "Escriba el ancho del producto (Ej. 5)" %>
+      <%= f.input :precio,  placeholder: "Escriba el precio del producto (Ej. 10.50)" %>
+      <%= f.label "Diseño (s)" %>
+      <%= f.association  :disenos,  :as => :check_boxes, label_method: :nombre, label: false %>
+      <%= f.label "Categoria (s)" %>
+      <%= f.association  :category, :as => :check_boxes, label_method: :nombre, label: false %>
+
+      <%= f.button :submit,  "Guardar Cambios", class: "btn btn-success"  %> |
+      <%= link_to "Cancelar", :back, {:class=>"btn btn-primary"} %>
+    <% end -%>
+  </div>
+
+<script>
+  $.material.init();
+</script>

@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="PostgreSQL - artesanias@localhost" uuid="1aff9375-347b-4744-8b18-8c00e07dae3c">
+    <database-info product="PostgreSQL" version="9.5.3" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+      <database id="1" name="artesanias">
+        <object-id>16384</object-id>
+        <visible>1</visible>
+      </database>
+      <database id="2" name="postgres">
+        <object-id>12453</object-id>
+      </database>
+      <schema id="3" parent="1" name="public">
+        <object-id>2200</object-id>
+        <visible>1</visible>
+        <introspection-state-number>1211</introspection-state-number>
+        <introspection-timestamp>2016-08-11.13:09:23.033</introspection-timestamp>
+      </schema>
+      <schema id="4" parent="1" name="pg_catalog">
+        <object-id>11</object-id>
+      </schema>
+      <schema id="5" parent="1" name="pg_toast">
+        <object-id>99</object-id>
+      </schema>
+      <schema id="6" parent="1" name="pg_temp_1">
+        <object-id>11816</object-id>
+      </schema>
+      <schema id="7" parent="1" name="pg_toast_temp_1">
+        <object-id>11817</object-id>
+      </schema>
+      <schema id="8" parent="1" name="information_schema">
+        <object-id>12161</object-id>
+      </schema>
+      <sequence id="9" parent="3" name="admins_id_seq">
+        <object-id>17397</object-id>
+        <state-number>1200</state-number>
+      </sequence>
+      <sequence id="10" parent="3" name="categories_id_seq">
+        <object-id>17314</object-id>
+        <state-number>1192</state-number>
+      </sequence>
+      <sequence id="11" parent="3" name="disenos_id_seq">
+        <object-id>17302</object-id>
+        <state-number>1191</state-number>
+      </sequence>
+      <sequence id="12" parent="3" name="empleados_id_seq">
+        <object-id>17380</object-id>
+        <state-number>1199</state-number>
+      </sequence>
+      <sequence id="13" parent="3" name="order_items_id_seq">
+        <object-id>17446</object-id>
+        <state-number>1203</state-number>
+      </sequence>
+      <sequence id="14" parent="3" name="order_statuses_id_seq">
+        <object-id>17412</object-id>
+        <state-number>1201</state-number>
+      </sequence>
+      <sequence id="15" parent="3" name="orders_id_seq">
+        <object-id>17423</object-id>
+        <state-number>1202</state-number>
+      </sequence>
+      <sequence id="16" parent="3" name="productos_id_seq">
+        <object-id>17339</object-id>
+        <state-number>1194</state-number>
+      </sequence>
+      <sequence id="17" parent="3" name="tamanos_id_seq">
+        <object-id>17326</object-id>
+        <state-number>1193</state-number>
+      </sequence>
+      <sequence id="18" parent="3" name="users_id_seq">
+        <object-id>17363</object-id>
+        <state-number>1197</state-number>
+      </sequence>
+      <sequence id="19" parent="3" name="vent_items_id_seq">
+        <object-id>17489</object-id>
+        <state-number>1211</state-number>
+      </sequence>
+      <sequence id="20" parent="3" name="vents_id_seq">
+        <object-id>17475</object-id>
+        <state-number>1210</state-number>
+      </sequence>
+      <table id="21" parent="3" name="admins">
+        <object-id>17399</object-id>
+        <state-number>1200</state-number>
+      </table>
+      <table id="22" parent="3" name="categories">
+        <object-id>17316</object-id>
+        <state-number>1205</state-number>
+      </table>
+      <table id="23" parent="3" name="categories_productos">
+        <object-id>17357</object-id>
+        <state-number>1195</state-number>
+      </table>
+      <table id="24" parent="3" name="disenos">
+        <object-id>17304</object-id>
+        <state-number>1208</state-number>
+      </table>
+      <table id="25" parent="3" name="disenos_productos">
+        <object-id>17360</object-id>
+        <state-number>1196</state-number>
+      </table>
+      <table id="26" parent="3" name="empleados">
+        <object-id>17382</object-id>
+        <state-number>1210</state-number>
+      </table>
+      <table id="27" parent="3" name="order_items">
+        <object-id>17448</object-id>
+        <state-number>1208</state-number>
+      </table>
+      <table id="28" parent="3" name="order_statuses">
+        <object-id>17414</object-id>
+        <state-number>1202</state-number>
+      </table>
+      <table id="29" parent="3" name="orders">
+        <object-id>17425</object-id>
+        <state-number>1209</state-number>
+      </table>
+      <table id="30" parent="3" name="productos">
+        <object-id>17341</object-id>
+        <state-number>1211</state-number>
+      </table>
+      <table id="31" parent="3" name="schema_migrations">
+        <object-id>17295</object-id>
+        <state-number>1189</state-number>
+      </table>
+      <table id="32" parent="3" name="tamanos">
+        <object-id>17328</object-id>
+        <state-number>1206</state-number>
+      </table>
+      <table id="33" parent="3" name="users">
+        <object-id>17365</object-id>
+        <state-number>1202</state-number>
+      </table>
+      <table id="34" parent="3" name="vent_items">
+        <object-id>17491</object-id>
+        <state-number>1211</state-number>
+      </table>
+      <table id="35" parent="3" name="vents">
+        <object-id>17477</object-id>
+        <state-number>1211</state-number>
+      </table>
+      <column id="36" parent="21" name="id">
+        <state-number>1200</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;admins_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="37" parent="21" name="email">
+        <state-number>1200</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+        <default-expression>&apos;&apos;::character varying</default-expression>
+      </column>
+      <column id="38" parent="21" name="encrypted_password">
+        <state-number>1200</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+        <default-expression>&apos;&apos;::character varying</default-expression>
+      </column>
+      <column id="39" parent="21" name="sign_in_count">
+        <state-number>1200</state-number>
+        <data-type>integer|0</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="40" parent="21" name="current_sign_in_at">
+        <state-number>1200</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="41" parent="21" name="last_sign_in_at">
+        <state-number>1200</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="42" parent="21" name="current_sign_in_ip">
+        <state-number>1200</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="43" parent="21" name="last_sign_in_ip">
+        <state-number>1200</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="44" parent="21" name="failed_attempts">
+        <state-number>1200</state-number>
+        <data-type>integer|0</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="45" parent="21" name="unlock_token">
+        <state-number>1200</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="46" parent="21" name="locked_at">
+        <state-number>1200</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="47" parent="21" name="created_at">
+        <state-number>1200</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="48" parent="21" name="updated_at">
+        <state-number>1200</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <index id="49" parent="21" name="admins_pkey">
+        <object-id>17410</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="50" parent="21" name="admins_pkey">
+        <object-id>17411</object-id>
+        <columns>id</columns>
+        <underlying-index>admins_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="51" parent="22" name="id">
+        <state-number>1192</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;categories_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="52" parent="22" name="nombre">
+        <state-number>1192</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="53" parent="22" name="descripcion">
+        <state-number>1192</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="54" parent="22" name="created_at">
+        <state-number>1192</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="55" parent="22" name="updated_at">
+        <state-number>1192</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="56" parent="22" name="slug">
+        <state-number>1205</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <index id="57" parent="22" name="categories_pkey">
+        <object-id>17323</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="58" parent="22" name="index_categories_on_nombre">
+        <object-id>17325</object-id>
+        <columns>nombre</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="59" parent="22" name="index_categories_on_slug">
+        <object-id>17466</object-id>
+        <columns>slug</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="60" parent="22" name="categories_pkey">
+        <object-id>17324</object-id>
+        <columns>id</columns>
+        <underlying-index>categories_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="61" parent="23" name="producto_id">
+        <state-number>1195</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="62" parent="23" name="category_id">
+        <state-number>1195</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="63" parent="24" name="id">
+        <state-number>1191</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;disenos_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="64" parent="24" name="diseno">
+        <state-number>1191</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="65" parent="24" name="nombre">
+        <state-number>1191</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="66" parent="24" name="created_at">
+        <state-number>1191</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="67" parent="24" name="updated_at">
+        <state-number>1191</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="68" parent="24" name="slug">
+        <state-number>1207</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <index id="69" parent="24" name="disenos_pkey">
+        <object-id>17311</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="70" parent="24" name="index_disenos_on_nombre">
+        <object-id>17313</object-id>
+        <columns>nombre</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="71" parent="24" name="index_disenos_on_slug">
+        <object-id>17468</object-id>
+        <columns>slug</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="72" parent="24" name="disenos_pkey">
+        <object-id>17312</object-id>
+        <columns>id</columns>
+        <underlying-index>disenos_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="73" parent="25" name="producto_id">
+        <state-number>1196</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="74" parent="25" name="diseno_id">
+        <state-number>1196</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="75" parent="26" name="id">
+        <state-number>1199</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;empleados_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="76" parent="26" name="first_name">
+        <state-number>1199</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="77" parent="26" name="last_name">
+        <state-number>1199</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="78" parent="26" name="email">
+        <state-number>1199</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+        <default-expression>&apos;&apos;::character varying</default-expression>
+      </column>
+      <column id="79" parent="26" name="encrypted_password">
+        <state-number>1199</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+        <default-expression>&apos;&apos;::character varying</default-expression>
+      </column>
+      <column id="80" parent="26" name="reset_password_token">
+        <state-number>1199</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="81" parent="26" name="reset_password_sent_at">
+        <state-number>1199</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="82" parent="26" name="remember_created_at">
+        <state-number>1199</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="83" parent="26" name="sign_in_count">
+        <state-number>1199</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="84" parent="26" name="current_sign_in_at">
+        <state-number>1199</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="85" parent="26" name="last_sign_in_at">
+        <state-number>1199</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="86" parent="26" name="current_sign_in_ip">
+        <state-number>1199</state-number>
+        <data-type>inet|0</data-type>
+      </column>
+      <column id="87" parent="26" name="last_sign_in_ip">
+        <state-number>1199</state-number>
+        <data-type>inet|0</data-type>
+      </column>
+      <column id="88" parent="26" name="confirmation_token">
+        <state-number>1199</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="89" parent="26" name="confirmed_at">
+        <state-number>1199</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="90" parent="26" name="confirmation_sent_at">
+        <state-number>1199</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="91" parent="26" name="unconfirmed_email">
+        <state-number>1199</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="92" parent="26" name="failed_attempts">
+        <state-number>1199</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="93" parent="26" name="unlock_token">
+        <state-number>1199</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="94" parent="26" name="locked_at">
+        <state-number>1199</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="95" parent="26" name="created_at">
+        <state-number>1199</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="96" parent="26" name="updated_at">
+        <state-number>1199</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="97" parent="26" name="active">
+        <state-number>1204</state-number>
+        <data-type>boolean|0</data-type>
+      </column>
+      <index id="98" parent="26" name="empleados_pkey">
+        <object-id>17393</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="99" parent="26" name="index_empleados_on_email">
+        <object-id>17395</object-id>
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="100" parent="26" name="index_empleados_on_reset_password_token">
+        <object-id>17396</object-id>
+        <columns>reset_password_token</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="101" parent="26" name="empleados_pkey">
+        <object-id>17394</object-id>
+        <columns>id</columns>
+        <underlying-index>empleados_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="102" parent="27" name="id">
+        <state-number>1203</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;order_items_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="103" parent="27" name="producto_id">
+        <state-number>1203</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="104" parent="27" name="order_id">
+        <state-number>1203</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="105" parent="27" name="unit_price">
+        <state-number>1203</state-number>
+        <data-type>numeric(12,3)|0</data-type>
+      </column>
+      <column id="106" parent="27" name="quantity">
+        <state-number>1203</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="107" parent="27" name="total_price">
+        <state-number>1203</state-number>
+        <data-type>numeric(12,3)|0</data-type>
+      </column>
+      <column id="108" parent="27" name="created_at">
+        <state-number>1203</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="109" parent="27" name="updated_at">
+        <state-number>1203</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="110" parent="27" name="diseno_id">
+        <state-number>1208</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <index id="111" parent="27" name="order_items_pkey">
+        <object-id>17452</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="112" parent="27" name="index_order_items_on_producto_id">
+        <object-id>17454</object-id>
+        <columns>producto_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="113" parent="27" name="index_order_items_on_order_id">
+        <object-id>17455</object-id>
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="114" parent="27" name="index_order_items_on_diseno_id">
+        <object-id>17469</object-id>
+        <columns>diseno_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="115" parent="27" name="order_items_pkey">
+        <object-id>17453</object-id>
+        <columns>id</columns>
+        <underlying-index>order_items_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="116" parent="27" name="fk_rails_90dbae2ccb">
+        <object-id>17456</object-id>
+        <columns>producto_id</columns>
+        <ref-key>~.productos.productos_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="117" parent="27" name="fk_rails_e3cb28f071">
+        <object-id>17461</object-id>
+        <columns>order_id</columns>
+        <ref-key>~.orders.orders_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="118" parent="27" name="fk_rails_c393422f41">
+        <object-id>17470</object-id>
+        <columns>diseno_id</columns>
+        <ref-key>~.disenos.disenos_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="119" parent="28" name="id">
+        <state-number>1201</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;order_statuses_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="120" parent="28" name="name">
+        <state-number>1201</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="121" parent="28" name="created_at">
+        <state-number>1201</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="122" parent="28" name="updated_at">
+        <state-number>1201</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <index id="123" parent="28" name="order_statuses_pkey">
+        <object-id>17421</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="124" parent="28" name="order_statuses_pkey">
+        <object-id>17422</object-id>
+        <columns>id</columns>
+        <underlying-index>order_statuses_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="125" parent="29" name="id">
+        <state-number>1202</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;orders_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="126" parent="29" name="subtotal">
+        <state-number>1202</state-number>
+        <data-type>numeric(12,3)|0</data-type>
+      </column>
+      <column id="127" parent="29" name="tax">
+        <state-number>1202</state-number>
+        <data-type>numeric(12,3)|0</data-type>
+      </column>
+      <column id="128" parent="29" name="shipping">
+        <state-number>1202</state-number>
+        <data-type>numeric(12,3)|0</data-type>
+      </column>
+      <column id="129" parent="29" name="total">
+        <state-number>1202</state-number>
+        <data-type>numeric(12,3)|0</data-type>
+      </column>
+      <column id="130" parent="29" name="order_status_id">
+        <state-number>1202</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="131" parent="29" name="user_id">
+        <state-number>1202</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="132" parent="29" name="nombre_res">
+        <state-number>1202</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="133" parent="29" name="direccion">
+        <state-number>1202</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="134" parent="29" name="ciudad">
+        <state-number>1202</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="135" parent="29" name="estado">
+        <state-number>1202</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="136" parent="29" name="pais">
+        <state-number>1202</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="137" parent="29" name="cp">
+        <state-number>1202</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="138" parent="29" name="created_at">
+        <state-number>1202</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="139" parent="29" name="updated_at">
+        <state-number>1202</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="140" parent="29" name="nombre">
+        <state-number>1209</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="141" parent="29" name="apellido">
+        <state-number>1209</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="142" parent="29" name="email">
+        <state-number>1209</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <index id="143" parent="29" name="orders_pkey">
+        <object-id>17432</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="144" parent="29" name="index_orders_on_order_status_id">
+        <object-id>17434</object-id>
+        <columns>order_status_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="145" parent="29" name="index_orders_on_user_id">
+        <object-id>17435</object-id>
+        <columns>user_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="146" parent="29" name="orders_pkey">
+        <object-id>17433</object-id>
+        <columns>id</columns>
+        <underlying-index>orders_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="147" parent="29" name="fk_rails_7a22cf8b0e">
+        <object-id>17436</object-id>
+        <columns>order_status_id</columns>
+        <ref-key>~.order_statuses.order_statuses_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="148" parent="29" name="fk_rails_f868b47f6a">
+        <object-id>17441</object-id>
+        <columns>user_id</columns>
+        <ref-key>~.users.users_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="149" parent="30" name="id">
+        <state-number>1194</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;productos_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="150" parent="30" name="fotografia">
+        <state-number>1194</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="151" parent="30" name="producto">
+        <state-number>1194</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="152" parent="30" name="descripcion">
+        <state-number>1194</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="153" parent="30" name="tamano_id">
+        <state-number>1194</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="154" parent="30" name="largo">
+        <state-number>1194</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="155" parent="30" name="alto">
+        <state-number>1194</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="156" parent="30" name="ancho">
+        <state-number>1194</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="157" parent="30" name="precio">
+        <state-number>1194</state-number>
+        <mandatory>1</mandatory>
+        <data-type>numeric(8,2)|0</data-type>
+      </column>
+      <column id="158" parent="30" name="created_at">
+        <state-number>1194</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="159" parent="30" name="updated_at">
+        <state-number>1194</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <index id="160" parent="30" name="productos_pkey">
+        <object-id>17348</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="161" parent="30" name="index_productos_on_producto">
+        <object-id>17350</object-id>
+        <columns>producto</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="162" parent="30" name="index_productos_on_tamano_id">
+        <object-id>17351</object-id>
+        <columns>tamano_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="163" parent="30" name="productos_pkey">
+        <object-id>17349</object-id>
+        <columns>id</columns>
+        <underlying-index>productos_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="164" parent="30" name="fk_rails_711299a172">
+        <object-id>17352</object-id>
+        <columns>tamano_id</columns>
+        <ref-key>~.tamanos.tamanos_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="165" parent="31" name="version">
+        <state-number>1189</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+      </column>
+      <index id="166" parent="31" name="unique_schema_migrations">
+        <object-id>17301</object-id>
+        <columns>version</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <column id="167" parent="32" name="id">
+        <state-number>1193</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;tamanos_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="168" parent="32" name="productos_id">
+        <state-number>1193</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="169" parent="32" name="tamano">
+        <state-number>1193</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="170" parent="32" name="descripcion">
+        <state-number>1193</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="171" parent="32" name="created_at">
+        <state-number>1193</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="172" parent="32" name="updated_at">
+        <state-number>1193</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="173" parent="32" name="slug">
+        <state-number>1206</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <index id="174" parent="32" name="tamanos_pkey">
+        <object-id>17335</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="175" parent="32" name="index_tamanos_on_tamano">
+        <object-id>17338</object-id>
+        <columns>tamano</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="176" parent="32" name="index_tamanos_on_slug">
+        <object-id>17467</object-id>
+        <columns>slug</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="177" parent="32" name="index_tamanos_on_productos_id">
+        <object-id>17337</object-id>
+        <columns>productos_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="178" parent="32" name="tamanos_pkey">
+        <object-id>17336</object-id>
+        <columns>id</columns>
+        <underlying-index>tamanos_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="179" parent="33" name="id">
+        <state-number>1197</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;users_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="180" parent="33" name="email">
+        <state-number>1197</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+        <default-expression>&apos;&apos;::character varying</default-expression>
+      </column>
+      <column id="181" parent="33" name="encrypted_password">
+        <state-number>1197</state-number>
+        <mandatory>1</mandatory>
+        <data-type>varchar|0</data-type>
+        <default-expression>&apos;&apos;::character varying</default-expression>
+      </column>
+      <column id="182" parent="33" name="reset_password_token">
+        <state-number>1197</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="183" parent="33" name="reset_password_sent_at">
+        <state-number>1197</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="184" parent="33" name="remember_created_at">
+        <state-number>1197</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="185" parent="33" name="sign_in_count">
+        <state-number>1197</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="186" parent="33" name="current_sign_in_at">
+        <state-number>1197</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="187" parent="33" name="last_sign_in_at">
+        <state-number>1197</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="188" parent="33" name="current_sign_in_ip">
+        <state-number>1197</state-number>
+        <data-type>inet|0</data-type>
+      </column>
+      <column id="189" parent="33" name="last_sign_in_ip">
+        <state-number>1197</state-number>
+        <data-type>inet|0</data-type>
+      </column>
+      <column id="190" parent="33" name="confirmation_token">
+        <state-number>1197</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="191" parent="33" name="confirmed_at">
+        <state-number>1197</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="192" parent="33" name="confirmation_sent_at">
+        <state-number>1197</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="193" parent="33" name="unconfirmed_email">
+        <state-number>1197</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="194" parent="33" name="failed_attempts">
+        <state-number>1197</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="195" parent="33" name="unlock_token">
+        <state-number>1197</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="196" parent="33" name="locked_at">
+        <state-number>1197</state-number>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="197" parent="33" name="created_at">
+        <state-number>1197</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="198" parent="33" name="updated_at">
+        <state-number>1197</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="199" parent="33" name="name">
+        <state-number>1198</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <column id="200" parent="33" name="lastname">
+        <state-number>1198</state-number>
+        <data-type>varchar|0</data-type>
+      </column>
+      <index id="201" parent="33" name="users_pkey">
+        <object-id>17376</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="202" parent="33" name="index_users_on_email">
+        <object-id>17378</object-id>
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="203" parent="33" name="index_users_on_reset_password_token">
+        <object-id>17379</object-id>
+        <columns>reset_password_token</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="204" parent="33" name="users_pkey">
+        <object-id>17377</object-id>
+        <columns>id</columns>
+        <underlying-index>users_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="205" parent="34" name="id">
+        <state-number>1211</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;vent_items_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="206" parent="34" name="producto_id">
+        <state-number>1211</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="207" parent="34" name="diseno_id">
+        <state-number>1211</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="208" parent="34" name="vent_id">
+        <state-number>1211</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="209" parent="34" name="unit_price">
+        <state-number>1211</state-number>
+        <data-type>numeric(12,3)|0</data-type>
+      </column>
+      <column id="210" parent="34" name="quantity">
+        <state-number>1211</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="211" parent="34" name="total_price">
+        <state-number>1211</state-number>
+        <data-type>numeric(12,3)|0</data-type>
+      </column>
+      <column id="212" parent="34" name="created_at">
+        <state-number>1211</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="213" parent="34" name="updated_at">
+        <state-number>1211</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <index id="214" parent="34" name="vent_items_pkey">
+        <object-id>17495</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="215" parent="34" name="index_vent_items_on_producto_id">
+        <object-id>17497</object-id>
+        <columns>producto_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="216" parent="34" name="index_vent_items_on_diseno_id">
+        <object-id>17498</object-id>
+        <columns>diseno_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="217" parent="34" name="index_vent_items_on_vent_id">
+        <object-id>17499</object-id>
+        <columns>vent_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="218" parent="34" name="vent_items_pkey">
+        <object-id>17496</object-id>
+        <columns>id</columns>
+        <underlying-index>vent_items_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="219" parent="34" name="fk_rails_0bee28ce01">
+        <object-id>17500</object-id>
+        <columns>producto_id</columns>
+        <ref-key>~.productos.productos_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="220" parent="34" name="fk_rails_8d2365b39d">
+        <object-id>17505</object-id>
+        <columns>vent_id</columns>
+        <ref-key>~.vents.vents_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="221" parent="35" name="id">
+        <state-number>1210</state-number>
+        <mandatory>1</mandatory>
+        <data-type>integer|0</data-type>
+        <default-expression>nextval(&apos;vents_id_seq&apos;::regclass)</default-expression>
+      </column>
+      <column id="222" parent="35" name="empleado_id">
+        <state-number>1210</state-number>
+        <data-type>integer|0</data-type>
+      </column>
+      <column id="223" parent="35" name="total">
+        <state-number>1210</state-number>
+        <data-type>numeric(12,3)|0</data-type>
+      </column>
+      <column id="224" parent="35" name="created_at">
+        <state-number>1210</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <column id="225" parent="35" name="updated_at">
+        <state-number>1210</state-number>
+        <mandatory>1</mandatory>
+        <data-type>timestamp|0</data-type>
+      </column>
+      <index id="226" parent="35" name="vents_pkey">
+        <object-id>17481</object-id>
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="227" parent="35" name="index_vents_on_empleado_id">
+        <object-id>17483</object-id>
+        <columns>empleado_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="228" parent="35" name="vents_pkey">
+        <object-id>17482</object-id>
+        <columns>id</columns>
+        <underlying-index>vents_pkey</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="229" parent="35" name="fk_rails_b3b7a69c50">
+        <object-id>17484</object-id>
+        <columns>empleado_id</columns>
+        <ref-key>~.empleados.empleados_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+    </database-model>
+  </data-source>
+</component>

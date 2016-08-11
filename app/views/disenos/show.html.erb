@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Ver Diseño  <%= @diseno.nombre %></h1>
+  <div class="well">
+    <p>
+      <%= image_tag @diseno.diseno.thumb.url if @diseno.diseno.present? %>
+    </p>
+<p>
+  <strong>Nombre:</strong>
+  <%= @diseno.nombre %>
+</p>
+
+<%= link_to 'Regresar' , disenos_path, :class => 'btn  btn-primary btn-sm'%>
+| <%= link_to 'Modificar', edit_diseno_path(@diseno), :class => 'btn  btn-warning btn-sm' %>
+</div>
+  </div>

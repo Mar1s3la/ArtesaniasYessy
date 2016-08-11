@@ -1,0 +1,29 @@
+<% if !@vent_item.nil? && @vent_item.errors.any? %>
+    <div class="alert alert-danger">
+      <ul>
+        <% @vent_item.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
+
+<div class="container">
+<% if @vent_items.size == 0 %>
+    <p class="text-center">
+      No hay productos en esta Venta.  Por favor, de clic en  <%= link_to "Regresar", catalogo_index_path %> y agrege algun producto a la venta.
+    </p>
+<% else %>
+          <h1 class="cart-text"><%= render 'catalogo/cart_text' %></h1>
+      <table>
+      <% @vent_items.each do |vent_item| %>
+        <%= render 'items/cart_row', producto: vent_item.producto, vent_item: vent_item, show_total: true %>
+    <% end %>
+     </table>
+    <p class="text-center">
+      <%= link_to "Proceder con la Venta", vent_path(current_vent.id), class: 'btn btn-success' %>
+      <%= link_to "Volver", catalogo_index_path, class: 'btn btn-danger' %>
+    </p>
+<% end %>
+
+</div>

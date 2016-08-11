@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="503136512">
+    <data-source source="LOCAL" name="PostgreSQL - artesanias@localhost" uuid="1aff9375-347b-4744-8b18-8c00e07dae3c">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/artesanias</jdbc-url>
+    </data-source>
+  </component>
+</project>

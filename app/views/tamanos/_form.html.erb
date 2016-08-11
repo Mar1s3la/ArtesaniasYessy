@@ -1,0 +1,10 @@
+<h1><%= name %> Tamaño <%= @tamano.tamano %></h1>
+<div class="well">
+  <%= simple_form_for @tamano do |f| %>
+      <%= f.input :tamano,  placeholder: "Escriba el tamaño (Ej. Chico)" %>
+      <%= f.input :descripcion,  placeholder: "Escriba la descripcion del tamaño (Ej. Este es el tamaño Chico)"  %>
+
+      <%= f.button :submit,  "Guardar Cambios", class: "btn btn-success"  %> |
+      <%= link_to "Cancelar", :back, {:class=>"btn btn-primary"} %>
+  <% end -%>
+  </div>

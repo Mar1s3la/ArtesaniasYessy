@@ -1,0 +1,34 @@
+<div class="container">
+  <h1>Listado de Clientes </h1>
+  <div class="well">
+    <div class="input-group">
+      <span class="input-group-addon icon icon-search"></span>
+      <input type="search" class="form-control" placeholder="Buscar" id="searchTerm" onkeyup="doSearch()">
+    </div>
+    <% if !@users.blank? %>
+        <table id="dataTable" class="table table-striped table-bordered">
+          <tr>
+            <th>Nombre cliente</th>
+            <th>Apellidos</th>
+            <th>Email</th>
+            <th colspan="3">Acciones</th>
+          </tr>
+
+          <% @users.each do |c| %>
+              <tr>
+                <td><%= c.name %></td>
+                <td><%= c.lastname %></td>
+                <td><%= c.email %></td>
+                <td><%= link_to ' Ver', cliente_path(c), :class => 'btn btn-info btn-sm', :style => 'color: white' %></td>
+              </tr>
+          <% end %>
+        </table>
+        </br>
+        <%= paginate @users, :theme => 'twitter-bootstrap-3'%>
+    <% else %>
+        <br/>
+        <h3>No hay registros</h3>
+        <br/>
+    <% end %>
+  </div>
+</div>

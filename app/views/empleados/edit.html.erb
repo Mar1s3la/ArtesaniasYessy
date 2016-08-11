@@ -1,0 +1,46 @@
+<div class="container">
+  <h1>Ver datos de <%= @empleado.first_name %>   <%= @empleado.last_name %></h1>
+  <div class="well">
+    <%= simple_form_for @empleado do |e| %>
+        <%= e.input :active, :input_html => { :checked => true }  %>
+        <%= e.submit 'Activar' %>
+    <% end %>
+
+    <p>
+      <strong>Nombre:</strong>
+      <%= @empleado.first_name %>
+    </p>
+    <p>
+      <strong>Apellidos:</strong>
+      <%= @empleado.last_name %>
+    </p>
+    <p>
+      <strong>Email:</strong>
+      <%= @empleado.email %>
+    </p>
+    <strong>Sus ventas realizadas:</strong>
+    <table class="table table-striped table-bordered">
+      <thead>
+      <tr>
+        <td>Fecha de la venta</td>
+        <td>Total de la Venta</td>
+      </tr>
+      </thead>
+      <%  @empleado.vents.each do |v| %>
+          <tbody>
+          <tr>
+            <td><%=v.updated_at.strftime("%d-%m-%Y a las %H:%M:%S") %> </td>
+            <td><%=number_to_currency v.total %> </td>
+            <td><%= link_to 'Ver', vent_path(v), class: 'btn btn-info btn-sm' %></td>
+          </tr>
+          </tbody>
+      <% end  %>
+
+    </table>
+    </br>
+    <%= link_to 'Regresar', empleados_path, class: 'btn btn-primary btn-sm'   %>
+  </div>
+</div>
+<script>
+  $.material.init();
+</script>

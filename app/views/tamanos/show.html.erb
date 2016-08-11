@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Ver datos de Tamaño <%= @tamano.tamano%></h1>
+<div class="well">
+<p>
+  <strong>Tamaño:</strong>
+  <%= @tamano.tamano %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @tamano.descripcion %>
+</p>
+
+<%= link_to 'Regresar' , tamanos_path,  class: 'btn btn-primary btn-sm'%>
+| <%= link_to 'Modificar', edit_tamano_path(@tamano),  class: 'btn btn-warning btn-sm' %>
+</div>
+</div>

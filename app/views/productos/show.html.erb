@@ -1,0 +1,45 @@
+<div class="container">
+  <h1>Ver datos de <%= @producto.producto%> tamaño <%= @producto.tamano.tamano%></h1>
+
+  <div class="well">
+    <p>
+      <%= image_tag @producto.fotografia.thumb.url if @producto.fotografia.present? %>
+    </p>
+    <p>
+      <strong>Producto:</strong>
+      <%= @producto.producto %>    <%= @producto.tamano.tamano%>
+    </p>
+    <p>
+      <strong>Descipcion:</strong>
+      <%= @producto.descripcion %>
+    </p>
+    <p>
+      <strong>Tamaño:</strong>
+      <%= @producto.tamano.tamano%>
+      </p>
+    <p>
+      <strong>Dimensiones:</strong>
+      <%= @producto.largo%> cm. x <%= @producto.ancho%> cm. x <%= @producto.alto%> cm. </br>
+    </p>
+    <p>
+       <strong>Precio:</strong>
+          $ <%= @producto.precio%>
+    </p>
+
+    <p>
+      <strong>Diseño:</strong>
+      <% @producto.disenos.each do |d| %>
+      <%= image_tag(d.diseno.thumb.url) %>
+      <%end %>
+    </p>
+    <p>
+      <strong>Categoria(s):</strong>
+      <% @producto.category.each do |c| %>
+          <%= c.nombre %>
+      <%end %>
+    </p>
+
+    <%= link_to 'Regresar', productos_path, class: 'btn btn-primary btn-sm'   %>
+    | <%= link_to 'Editar', edit_producto_path(@producto), class: 'btn btn-warning btn-sm'   %>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>Sus ordenes</h1>
+  <div class="well">
+   <div class="input-group">
+      <span class="input-group-addon icon icon-search"></span>
+      <input type="search" class="form-control" placeholder="Buscar" id="searchTerm" onkeyup="doSearch()">
+    </div>
+    <% if !@orders.blank? %>
+   <table id="dataTable" class="table table-striped table-bordered">
+          <thead>
+          <tr>
+            <td>Orden ID</td>
+            <td>Cliente</td>
+            <td>Fecha</td>
+            <td>Status</td>
+            <td>Total</td>
+          </tr>
+          </thead>
+          <% @orders.each do |o| %>
+              <tbody>
+              <tr>
+                <td><%=o.id%></td>
+                <td><%=o.user.name%><%=o.user.lastname%></td>
+                <td><%=o.updated_at.strftime("%d-%m-%Y a las %H:%M:%S") %></td>
+                <td><%=o.order_status.name %></td>
+                <td><%=o.subtotal %></td>
+                <td><%= link_to 'Ver', order_path(o), class: 'btn btn-info btn-sm' %></td>
+              </tr>
+              </tbody>
+          <% end  %>
+
+        </table>
+        </br>
+    <% else %>
+        <br/>
+        <h3>No hay registros</h3>
+        <br/>
+    <% end %>
+  </div>
+</div>

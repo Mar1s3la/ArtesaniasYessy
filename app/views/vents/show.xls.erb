@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:x="urn:schemas-microsoft-com:office:excel"
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="Sheet1">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">Artesanias Yessy</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">Empleado</Data></Cell>
+        <Cell><Data ss:Type="String"><%=@vent.empleado.first_name %><%=@vent.empleado.last_name %></Data></Cell>
+        <Cell><Data ss:Type="String">Fecha</Data></Cell>
+        <Cell><Data ss:Type="String"><%=@vent.updated_at.strftime("%d-%m-%Y a las %H:%M:%S")   %></Data></Cell>
+        </Row>
+        <Row>
+        <Cell><Data ss:Type="String">Producto</Data></Cell>
+        <Cell><Data ss:Type="String">Tamaño</Data></Cell>
+        <Cell><Data ss:Type="String">Cantidad</Data></Cell>
+        <Cell><Data ss:Type="String">Precio</Data></Cell>
+        <Cell><Data ss:Type="String">Subtotal</Data></Cell>
+      </Row>
+      <% @vent.vent_items.each do |i| %>
+      <Row>
+        <Cell><Data ss:Type="String"><%= i.producto.producto %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= i.producto.tamano.tamano %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= i.quantity %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= i.producto.precio %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= i.total_price %></Data></Cell>
+      </Row>
+      <% end %>
+      <Row>
+        <Cell><Data ss:Type="String">Total Venta:</Data></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell></Cell>
+        <Cell><Data ss:Type="Number"><%=@vent.total %></Data></Cell>
+      </Row>
+          </Table>
+  </Worksheet>
+</Workbook>

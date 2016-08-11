@@ -1,0 +1,30 @@
+<div class="well">
+
+  <div class="row">
+    <div class="col-xs-8">
+        <%= image_tag producto.fotografia.thumb.url if producto.fotografia.present? %>
+      <h4><%= producto.producto %> tamaño <%= producto.tamano.tamano %></h4>
+      <h4>Precio: <span style="color: green"><%= number_to_currency producto.precio %></span></h4>
+
+    </div>
+
+      <%= simple_form_for (vent_item), remote: true do |f| %>
+        <div class="input-group">
+        <%= f.association :diseno, collection:producto.disenos.all, :as=>:radio_buttons, label_method: :nombre %>
+        </div >
+
+        <div class="input-group">
+          <%=f.label "Cantidad" %>
+        <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
+            <%= f.hidden_field :producto_id, value: producto.id %>
+            <%= f.submit "Agregar", class: "btn btn-primary"%>
+          </div>
+          </div>
+      <% end %>
+
+</div>
+</div>
+
+<script>
+  $.material.init();
+</script>

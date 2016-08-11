@@ -1,0 +1,10 @@
+<h1><%= name %> Categoria <%= @category.nombre %></h1>
+<div class="well">
+<%= simple_form_for (@category),  :html => {:multipart => true} do |f| %>
+      <%= f.input :nombre,   :placeholder=>'Escriba el nombre de la categoria(Ej. Rana)'%>
+      <%= f.input :descripcion, :placeholder=>'Escriba la descripcion de la categoria(Ej. Esta es la categoria de las ranas)' %>
+
+      <%= f.button :submit,  "Guardar Cambios", class: "btn btn-success"  %> |
+      <%= link_to "Cancelar", :back, {:class=>"btn btn-primary"} %>
+<% end %>
+</div>
